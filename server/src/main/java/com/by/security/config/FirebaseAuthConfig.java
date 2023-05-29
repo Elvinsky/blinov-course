@@ -1,0 +1,41 @@
+package com.by.security.config;
+
+import com.google.auth.oauth2.GoogleCredentials;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+@Configuration
+public class FirebaseAuthConfig {
+    String resource = "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"dima-course\",\n" +
+            "  \"private_key_id\": \"4e248d163f202310947bc99efa341e88f3e9e85f\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCXMfP6k5sp7mQH\\niX/B07V/mBQvnWDtiP2725ynGNs/SO9Sdc+jBzvDFm/EAAW7U5YCg+vnCLjWkOYR\\nEvNsRLX4x1oDjALAVf1hOjNTDeoKubrEEISFuEtopT+t+abZKlxBa2r9vEMpRtHH\\neMyB46/OcxWtAWVBxxEe+35npxOzpGwFkpyZxeDgDgsMyCPLd1XevDmRbUZYUXKG\\nrE7Cm4pktvdmIiiVUkh11FeUL1AYdb21PcxgUUHcFBjepc6liRkEC8QXCGnG4EDc\\n7WAzvE9ateZc/NFJ5mkTikG+jtyXxzx5SJ3RYKwQTNOfYJ1ZIJP9vC6ueyz6ydYA\\nvc2NDicNAgMBAAECggEAQokclZpsb4z1ny1+t+T7W82ooHWRCKc/BfM0ooI5RcXK\\nb87hk5xky8rtX2MlIpU7kBrO7wpzERWN8ViWIACy1eqgravpMAwHZ8iNepDGfHbU\\nfmDIePIr2T7TYbPaHXpbQ/zKBiRZp+n++lmqIcT5gpA5qztQfJxmZ+yD6YhojqZw\\n0Rt7p6YX+ToF/2s6wFJxVWGhfBv8pE5Jgvw6wba0Slfu8Y66yoQeDUMYv8BcN6+9\\nyJ0yNb4tdt1wlrJDwJAhK2pDtaLTAXkNZe3hKEuiStYAt9+8nnEoc9CAScmizTV+\\nHYMdxiDBZrzpwfw/oEi+2IYNUFMZt606irb3yzKoLwKBgQDRzQ6k8hjukAKiYrFK\\nBw46ZQKbX1/OHiGiK0QZAcmnLYOtwsF7NXFLKy/cHYgPoNAWRSXRUWHd+STe4Hrc\\nUvY7MEdLtoq7Lj39z+97oQqaFQHZHA9G2JqlzO5JoDV0z3XGVguNak1HvLP5Zjzc\\nvIblK/nho3xmTXiSyi8YU44PUwKBgQC4fSdyQBOq69xsjYObeN7h7mok7IYjQVrn\\n8ZW4usH0Ue39zqBboSgiGmS7WSx+70ZYCilhSLVNF2rF8QXqJ0IEpLJLb8IQiS3z\\neVNqkLUsbe7aYS0ggot3G4zbMTU05TsBd1O9oeZBTybSXA8z2E3eTABW79IkBNNy\\nSQLsFE8EHwKBgBOM0y+Fq9MXMlelcLXgQHAql3qZAZl4b1PoSjk2VG8yq5GWk2cC\\nzOLfTF9rlRE3wAxDN0nxFniTzd7C9k/vnyhW0F36zaSxo28yYDOaBx3ilUCA/99v\\nMcH/fbj4p+KRrnzj6cGsxTTJHdBAua0sGDnkxi1DicUStQigtJDEwHknAoGAW95e\\n1ULZSGTZR+kUX0hKXOF3U9nAVjAGT7f6oZnGWZ6uz5OkQNy4ensALFcUlEUcl1zA\\nDGTDe5csoVMLafWQp3VIH86QKeHV0wdYpZlXzr8TkQWRDj5TqsU6WDBh2WxI/Mrq\\nFWVYnq8GmvwiyeNtq0PXa3NTBoKstJ1s6hiW3GsCgYA5P7RAbaLlIRfX9e0cxF+W\\nWbKluM/hyppwJqxNJuR+YzBKBAnzeqSfeIzwxzdkF4p6+S9E8jHRrU4YO8yK9Iwx\\n8s5Rd7ykLmbfWYlI60KsB1nLep4q+WcovWIbu0P/F0ehxlbVP1d49ghZusxhRXfn\\n9y2Asph1AKUqgjk0hWkLhg==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"firebase-adminsdk-t4buk@dima-course.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"112335038021886617897\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-t4buk%40dima-course.iam.gserviceaccount.com\"\n" +
+            "}\n";
+
+    @Bean
+    FirebaseAuth firebaseAuth() throws IOException {
+        InputStream resourceStream = new ByteArrayInputStream(resource.getBytes());
+        var options = FirebaseOptions.builder()
+                .setCredentials(GoogleCredentials.fromStream(resourceStream))
+                .build();
+
+        var firebaseApp = FirebaseApp.initializeApp(options);
+
+        return FirebaseAuth.getInstance(firebaseApp);
+    }
+
+}

@@ -1,0 +1,307 @@
+{
+  "events": [
+    {
+      "id": "mrmty",
+      "userId": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "name": "123123",
+      "start": "2023-05-12T00:00:00",
+      "end": "2023-05-12T23:59:59",
+      "attendees": 2,
+      "description": "123123"
+    },
+    {
+      "id": "hetr",
+      "userId": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "name": "Test Title",
+      "start": "2023-05-14T00:00:00",
+      "end": "2023-05-14T23:59:59",
+      "attendees": 5,
+      "description": "test description 3"
+    },
+    {
+      "id": "ertheb",
+      "userId": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "name": "Test Title",
+      "start": "2023-05-18T00:00:00",
+      "end": "2023-05-18T23:59:59",
+      "attendees": 2,
+      "description": "test description 4"
+    },
+    {
+      "id": "ertherth",
+      "userId": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "name": "Test Title",
+      "start": "2023-05-18T00:00:00",
+      "end": "2023-05-19T23:59:59",
+      "attendees": 12,
+      "description": "test description 5"
+    },
+    {
+      "id": "2j0h41rd8",
+      "name": "123123",
+      "start": "2023-05-16T00:00:00",
+      "end": "2023-05-16T23:59:59",
+      "attendees": 3,
+      "description": "123123"
+    },
+    {
+      "id": "ju40sbqn9",
+      "name": "awdawd",
+      "start": "2023-05-18T00:00:00",
+      "end": "2023-05-18T23:59:59",
+      "attendees": 1,
+      "description": "awd"
+    },
+    {
+      "id": "udwisefzm",
+      "name": "dawd",
+      "start": "2023-05-12T04:31:01",
+      "end": "2023-05-12T14:03:33",
+      "attendees": 4,
+      "description": "dawd"
+    },
+    {
+      "id": "wbr8l57pa",
+      "name": "mok",
+      "start": "2023-05-18T00:00:00",
+      "end": "2023-05-18T23:59:59",
+      "attendees": 2,
+      "description": ".;"
+    },
+    {
+      "id": "7fjft50if",
+      "name": "hf",
+      "start": "2023-05-26T00:00:00",
+      "end": "2023-05-26T23:59:59",
+      "attendees": 2,
+      "description": "fgh"
+    },
+    {
+      "id": "hrkaml65",
+      "name": "ad",
+      "start": "2023-05-15T00:00:00",
+      "end": "2023-05-15T23:59:59",
+      "attendees": 2,
+      "description": "awd"
+    },
+    {
+      "id": "kzqz20i0r",
+      "name": "awd",
+      "start": "2023-4-10T00:00:00",
+      "end": "2023-4-10T23:59:59",
+      "attendees": 2,
+      "description": "awd"
+    },
+    {
+      "id": "cackhuy59",
+      "name": "awdawd",
+      "start": "2023-05-11T00:00:00",
+      "end": "2023-05-11T23:59:59",
+      "attendees": 1,
+      "description": "awdawd"
+    },
+    {
+      "id": "ovfhpo8hr",
+      "name": "awdawd",
+      "start": "2023-05-11T00:00:00",
+      "end": "2023-05-11T23:59:59",
+      "attendees": 3,
+      "description": "awd"
+    },
+    {
+      "id": "k4rizi7rq",
+      "name": "a",
+      "start": "2023-05-12T00:00:00",
+      "end": "2023-05-12T23:59:59",
+      "attendees": 3,
+      "description": "awd"
+    },
+    {
+      "id": "x5v0o6hv",
+      "name": "b",
+      "start": "2023-05-12T00:00:00",
+      "end": "2023-05-12T23:59:59",
+      "attendees": 5,
+      "description": "awd"
+    },
+    {
+      "id": "xxyzh73sf",
+      "name": "c",
+      "start": "2023-05-12T00:00:00",
+      "end": "2023-05-12T23:59:59",
+      "attendees": 7,
+      "description": "awdawd"
+    },
+    {
+      "id": "glygd156",
+      "name": "ghkfgj",
+      "start": "2023-05-13T00:00:00",
+      "end": "2023-05-13T23:59:59",
+      "attendees": 5,
+      "description": "l,"
+    }
+  ],
+  "comments": [],
+  "users": [
+    {
+      "id": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "email": "mikhnevichnik@gmail.com",
+      "name": "Elvinsky"
+    },
+    {
+      "id": "testgood",
+      "email": "test@gmail.com",
+      "name": "Dima"
+    },
+    {
+      "id": "PpeuMfX1kKap0axFggZ9AVRvmkV2",
+      "email": "nikita@mail.ru",
+      "name": "nikita"
+    },
+    {
+      "id": "QPt4wUmKa4Qf97Vatbl44Ka9giu1",
+      "email": "user2@mail.com",
+      "name": "User2"
+    }
+  ],
+  "userEvents": [
+    {
+      "id": "awd1",
+      "userId": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "eventId": "mrmty"
+    },
+    {
+      "userId": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "eventId": "2j0h41rd8",
+      "id": "BexKgbi"
+    },
+    {
+      "userId": "PpeuMfX1kKap0axFggZ9AVRvmkV2",
+      "eventId": "mrmty",
+      "id": "u3KtsCS"
+    },
+    {
+      "userId": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "eventId": "ju40sbqn9",
+      "id": "-5ouoXp"
+    },
+    {
+      "userId": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "eventId": "udwisefzm",
+      "id": "5n3sh9s"
+    },
+    {
+      "userId": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "eventId": "wbr8l57pa",
+      "id": "UnfnXMW"
+    },
+    {
+      "eventId": "cackhuy59",
+      "id": "bV5T7zj"
+    },
+    {
+      "userId": "XwHKAlvuIwdP2VsOmWH7DFxJ9on2",
+      "eventId": "ovfhpo8hr",
+      "id": "Yuse7RA"
+    },
+    {
+      "userId": "tcrfnEFGTCd1O9M0BXF9xXCiFv33",
+      "eventId": "mq73y28ym",
+      "id": "670prSX"
+    },
+    {
+      "userId": "tcrfnEFGTCd1O9M0BXF9xXCiFv33",
+      "eventId": "f4fpd6bwd",
+      "id": "CtVvQ6P"
+    },
+    {
+      "userId": "tcrfnEFGTCd1O9M0BXF9xXCiFv33",
+      "eventId": "crxej9jn",
+      "id": "CpO3dlA"
+    },
+    {
+      "userId": "tcrfnEFGTCd1O9M0BXF9xXCiFv33",
+      "eventId": "k4rizi7rq",
+      "id": "dOeWwff"
+    },
+    {
+      "userId": "tcrfnEFGTCd1O9M0BXF9xXCiFv33",
+      "eventId": "x5v0o6hv",
+      "id": "cLchbmQ"
+    },
+    {
+      "userId": "tcrfnEFGTCd1O9M0BXF9xXCiFv33",
+      "eventId": "xxyzh73sf",
+      "id": "IS1OY1I"
+    },
+    {
+      "userId": "tcrfnEFGTCd1O9M0BXF9xXCiFv33",
+      "eventId": "glygd156",
+      "id": "O0AGx-_"
+    },
+    {
+      "userId": "tcrfnEFGTCd1O9M0BXF9xXCiFv33",
+      "eventId": "ylb7oksxcj",
+      "id": "L831OGR"
+    },
+    {
+      "userId": "tcrfnEFGTCd1O9M0BXF9xXCiFv33",
+      "eventId": "jwk7s66xp",
+      "id": "LfNF3KV"
+    }
+  ],
+  "userFavourites": [
+    {
+      "userId": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "eventId": "mrmty",
+      "id": 1
+    },
+    {
+      "userId": "4oEVQGCinGZorgRcsld4c0qxZlf1",
+      "eventId": "2j0h41rd8",
+      "id": 2
+    },
+    {
+      "userId": "XwHKAlvuIwdP2VsOmWH7DFxJ9on2",
+      "eventId": "ovfhpo8hr",
+      "id": 3
+    },
+    {
+      "userId": "tcrfnEFGTCd1O9M0BXF9xXCiFv33",
+      "eventId": "x5v0o6hv",
+      "id": 4
+    },
+    {
+      "userId": "tcrfnEFGTCd1O9M0BXF9xXCiFv33",
+      "eventId": "xxyzh73sf",
+      "id": 5
+    }
+  ],
+  "userFriends": [
+    {
+      "firstUserId": "mikhnevichnik@gmail.com",
+      "secondUserId": "test@gmail.com",
+      "id": 1
+    },
+    {
+      "firstUserId": "nikitos@gmail.com",
+      "secondUserId": "nikita@tut.by",
+      "id": 2
+    },
+    {
+      "firstUserId": "nikita@tut.by",
+      "secondUserId": "nikitos@gmail.com",
+      "id": 3
+    },
+    {
+      "firstUserId": "test12@gmail.com",
+      "secondUserId": "tese@gmail.com",
+      "id": 4
+    },
+    {
+      "firstUserId": "tese@gmail.com",
+      "secondUserId": "test12@gmail.com",
+      "id": 5
+    }
+  ]
+}
